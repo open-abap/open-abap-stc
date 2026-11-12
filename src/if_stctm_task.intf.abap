@@ -6,14 +6,16 @@ INTERFACE if_stctm_task PUBLIC.
   TYPES tt_taskname TYPE STANDARD TABLE OF t_taskname WITH DEFAULT KEY.
   TYPES t_tasktype TYPE stc_task_type.
   TYPES t_taskdescr TYPE stc_task_descr.
-  TYPES t_bool TYPE sap_bool.
+  TYPES t_bool TYPE abap_boolean.
   TYPES t_necessary TYPE c LENGTH 1.
   TYPES t_progress TYPE stc_task_progress.
   TYPES t_status TYPE stc_task_status.
+
   TYPES: BEGIN OF ts_task,
            taskname TYPE stc_task_id,
            tasktype TYPE stc_task_type,
          END OF ts_task.
+
   TYPES tt_task TYPE STANDARD TABLE OF ts_task WITH DEFAULT KEY.
 
   CONSTANTS: BEGIN OF c_bool,
