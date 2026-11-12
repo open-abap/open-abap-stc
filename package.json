@@ -1,0 +1,17 @@
+{
+  "name": "open-abap-stc",
+  "version": "1.0.0",
+  "private": true,
+  "description": "test",
+  "scripts": {
+    "unit": "abap_transpile && echo RUNNING && node output/index.mjs",
+    "test": "abaplint && npm run unit"
+  },
+  "license": "",
+  "dependencies": {
+    "@abaplint/cli": "^2.120.103",
+    "@abaplint/runtime": "^2.14.29",
+    "@abaplint/database-sqlite": "^2.14.12",
+    "@abaplint/transpiler-cli": "^2.14.29"
+  }
+}
